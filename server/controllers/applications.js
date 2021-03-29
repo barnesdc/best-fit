@@ -1,3 +1,5 @@
+// CRUD Functions for application info:
+// Get, Create, Delete, Update
 import ApplicationInfo from '../models/applicationInfo.js'
 
 export const getApplications = async (req, res) => {
