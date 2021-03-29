@@ -68,3 +68,11 @@ Purpose: Create an application to track the status of job applications
 - You should see a console output of: _"Server running on port: youApplcationPortNumber"_
 
 ## How to Run the Client
+
+
+## Resources:
+
+Eslint / Prettier
+- https://thomlom.dev/setup-eslint-prettier-react/
+- https://www.npmjs.com/package/eslint-plugin-prettier
+- https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats
