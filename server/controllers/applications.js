@@ -1,3 +1,4 @@
+// Functions for application info
 import ApplicationInfo from '../models/applicationInfo.js'
 
 export const getApplications = async (req, res) => {
