@@ -18,6 +18,6 @@ const applicationSchema = mongoose.Schema({
     } 
 })
 
-const ApplicationData = mongoose.model('ApplicationData', applicationSchema)
+const ApplicationInfo = mongoose.model('ApplicationInfo', applicationSchema)
 
-export default ApplicationData
+export default ApplicationInfo

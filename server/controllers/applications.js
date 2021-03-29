@@ -1,4 +1,4 @@
-import ApplicationData from '../models/applicationData.js'
+import ApplicationInfo from '../models/applicationData.js'
 
 export const getApplications = async (req,res) => {  // routes will always have a reqest and response
         try {
