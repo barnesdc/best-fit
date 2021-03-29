@@ -1,8 +1,10 @@
 import express from 'express'
+import { getApplications, createApplication } from '../controllers/applications.js'
+
 const router = express.Router()
 
-router.get('/', (req,res) => {  // routes will always have a reqest and response
-        res.send('This works')
-})
+router.get('/', getApplications)
+router.post('/', createApplication)
+
 
 export default router
