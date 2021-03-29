@@ -21,6 +21,14 @@ Purpose: Create an application to track the status of job applications
 - Counter
 - web scraping
   
+## Initial Setup
+
+- The following command will install dependencies for both client and server:
+  
+  ```BASH
+  yarn install && yarn install:dev
+  ```
+
 ## How to Run the Server
 
 - **Set up MongoDb**
@@ -54,7 +62,8 @@ Purpose: Create an application to track the status of job applications
   source ~/.yourFilename
   ```
 
-- Start the server with "**npm start**" or "**yarn start**" within the server directory, you should see a console output of: 
-  - *"Server running on port: youApplcationPortNumber"*
+- If in the server directory: ```yarn start```
+- If in the root directory:   ```yarn start:server```
+- You should see a console output of: *"Server running on port: youApplcationPortNumber"*
 
 ## How to Run the Client
