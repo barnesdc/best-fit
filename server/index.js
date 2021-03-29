@@ -3,7 +3,11 @@ import mongoose from 'mongoose'
 import cors from 'cors'
 import bodyParser from 'body-parser'
 
-const app = express() 
+import applicationRoutes from './routes/applications.js'
+
+const app = express()
+
+app.use('/applications', applicationRoutes) // localhost:5001/appplications
 
 app.use(bodyParser.json({limit: "30mb", extended: true}))
 app.use(bodyParser.urlencoded({limit: "30mb", extended: true}))
@@ -20,3 +24,4 @@ mongoose.connect(MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true})
 .catch((error)=>console.log(error.message))
 
 mongoose.set('useFindAndModify', false)
+
