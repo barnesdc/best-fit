@@ -13,23 +13,32 @@ Purpose: Create an application to track the status of job applications
 
 - User data
 - Appliation information
-  
+
 ## Desired Features
 
 - impliment sign in with (google / linked-in)
 - PDF parser and anaylsis
 - Counter
 - web scraping
-  
+
+## Initial Setup
+
+- The following command will install dependencies for both client and server:
+
+  ```BASH
+  yarn install && yarn install:dev
+  ```
+
 ## How to Run the Server
 
 - **Set up MongoDb**
   - Create an account and database if you dont already have one at <https://www.mongodb.com/cloud/atlas>
   - **Create a Cluster**
-  - In the **Network Access** tab, *Add IP Address*
-  - In the **Database Access** tab, *ADD new databse user*
+  - In the **Network Access** tab, _Add IP Address_
+  - In the **Database Access** tab, _ADD new databse user_
     - Save username and password to be used as an environment variable
 - **Environmnt Variables**
+
   - I personally like to save environment variables in a hidden file location in my home directory, then sourcing to use during development.
 
   ```BASH
@@ -54,7 +63,8 @@ Purpose: Create an application to track the status of job applications
   source ~/.yourFilename
   ```
 
-- Start the server with "**npm start**" or "**yarn start**" within the server directory, you should see a console output of: 
-  - *"Server running on port: youApplcationPortNumber"*
+- If in the server directory: `yarn start`
+- If in the root directory: `yarn start:server`
+- You should see a console output of: _"Server running on port: youApplcationPortNumber"_
 
 ## How to Run the Client
