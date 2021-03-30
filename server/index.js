@@ -7,11 +7,11 @@ import applicationRoutes from './routes/applications.js'
 
 const app = express()
 
-app.use('/applications', applicationRoutes) // localhost:5001/appplications
-
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors())
+
+app.use('/applications', applicationRoutes) // localhost:5001/appplications
 
 // https://www.mongodb.com/cloud/atlas
 const { MONGO_USER } = process.env

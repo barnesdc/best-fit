@@ -1,4 +1,7 @@
+// application routes
+
 import express from 'express'
+
 import {
 	getApplications,
 	createApplication,
