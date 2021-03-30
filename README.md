@@ -71,10 +71,10 @@ Purpose: Create an application to track the status of job applications
 
 ## How to Run the Client
 
-
 ## Resources:
 
 Eslint / Prettier
+
 - https://thomlom.dev/setup-eslint-prettier-react/
 - https://www.npmjs.com/package/eslint-plugin-prettier
 - https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats

@@ -1,49 +1,50 @@
 {
-  "name": "best-ft",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:barnesdc/best-fit.git",
-  "author": "Dante Barnes <charlieb.dev7@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "install:dev": "yarn run install:client && yarn run install:server ",
-    "install:client": "cd client && yarn",
-    "install:server": "cd server && yarn",
-    "client:dev": "cd client && yarn start",
-    "server:dev": "cd server && yarn start",
-    "start:dev": "concurrently \"yarn run client:dev\" \"yarn run client:dev\"",
-    "lint": "eslint ./ --ignore-path .gitignore",
-    "lint:fix": "npm run lint -- --fix",
-    "format": "prettier --write \"**/*.{js,js,jsx,json,scss,css,md}\""
-  },
-  "dependencies": {
-    "concurrently": "^6.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.23.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.23.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1",
-    "prettier-package-json": "^2.1.3",
-    "react": "^17.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run format && yarn run lint"
-    }
-  },
-  "lint-staged": {
-    "package.json": [
-      "prettier-package-json --write"
-    ],
-    "*.+(js|jsx)": "eslint --fix",
-    "*.+(json|css|md)": "prettier --write"
-  }
+	"name": "best-ft",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:barnesdc/best-fit.git",
+	"author": "Dante Barnes <charlieb.dev7@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"install:dev": "yarn run install:client && yarn run install:server ",
+		"install:client": "cd client && yarn",
+		"install:server": "cd server && yarn",
+		"client:dev": "cd client && yarn start",
+		"server:dev": "cd server && yarn start",
+		"start:dev": "concurrently \"yarn run client:dev\" \"yarn run client:dev\"",
+		"lint": "eslint -c ./.eslintrc.js . --ignore-path .gitignore",
+		"lint:fix": "npm run lint -- --fix",
+		"format": "prettier --write \"**/*.{js,js,jsx,json,scss,css,md}\""
+	},
+	"dependencies": {
+		"browserslist": "^4.16.3",
+		"concurrently": "^6.0.0"
+	},
+	"devDependencies": {
+		"eslint": "^7.23.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-prettier": "^8.1.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-react": "^7.23.1",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"husky": "^6.0.0",
+		"lint-staged": "^10.5.4",
+		"prettier": "^2.2.1",
+		"prettier-package-json": "^2.1.3",
+		"react": "^17.0.2"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn run format && yarn run lint"
+		}
+	},
+	"lint-staged": {
+		"package.json": [
+			"prettier-package-json --write"
+		],
+		"*.+(js|jsx)": "eslint --fix",
+		"*.+(json|css|md)": "prettier --write"
+	}
 }
