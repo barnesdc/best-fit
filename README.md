@@ -17,9 +17,11 @@ Purpose: Create an application to track the status of job applications
 ## Desired Features
 
 - impliment sign in with (google / linked-in)
+  - (Passport may be a good solution)
 - PDF parser and anaylsis
 - Counter
 - web scraping
+- SonarQube Community edition for Code Smells
 
 ## Initial Setup
 
